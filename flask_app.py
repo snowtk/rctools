@@ -12,7 +12,7 @@ CORS(app)
 dicto = cabula.get_dict()
 
 killswitch = False
-
+#teste
 
 @app.route('/update_server', methods=['POST'])
 def webhook():
