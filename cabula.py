@@ -194,7 +194,7 @@ duas).""": {'cor': ["""r1""", """r3"""], 'quest': [""" centraliza a administracd
 
 """, """ so existe um ponto de falha"""]},
          """B10Que afirmagées estado correctas sobre os protocolos do nivel da aplicacao? (escolha duas)""": {
-             'cor': ["""r3""", """r2"""], 'quest': [""" o DNS atribui dinamicamente enderecos IP
+             'cor': ["""r5""", """r2"""], 'quest': [""" o DNS atribui dinamicamente enderecos IP
 
 """, """ o HTTP transfere informacao de um servidor web para um cliente “ss.
 """, """ o POP entrega emails de um cliente a um servidor de email
@@ -360,18 +360,11 @@ Qual é 0 objectivo do servico de DNS? Domain Name System""": {'cor': ["""r2"""]
 """, """ envia e-mails de um cliente para um servidor de DNS
 """, """ autenticar um cliente na rede"""]}, """B9Uma pequena rede doméstica foi instalada para ligar trés computadores entre si, com o
 objectivo de partilha de ficheiros e impressoras. Que propriedades apresenta este tipo de
-rede? (escolha duas)""": {'cor': ["""r2""", """r4"""], 'quest': ["""
-""", """
-""", """
-""", """
-""", """
-
-as contas dos utilizadores estao centralizadas
-
-os mecanismos de seguran¢a sao de mais dificil implementagGdo
-sao necessarios sistemas operativos especificos
-as permissées sobre ficheiros sao controladas por um Unico utilizador ===
-um computador que responda a um pedido de partilha de ficheiros esta a
+rede? (escolha duas)""": {'cor': ["""r2""", """r5"""], 'quest': ["""as contas dos utilizadores estao centralizadas
+""", """os mecanismos de seguran¢a sao de mais dificil implementagGdo
+""", """sao necessarios sistemas operativos especificos
+""", """as permissées sobre ficheiros sao controladas por um Unico utilizador
+""", """um computador que responda a um pedido de partilha de ficheiros esta a
 funcionar como servidor"""]},
          """C1Quais sao as funcionalidades do protocolo UDP? (escolha duas)""": {'cor': ["""r2""", """r3"""], 'quest': [""" controlo de fluxo
 
