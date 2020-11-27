@@ -5,12 +5,24 @@ from flask import Flask, request
 from flask_cors import CORS,cross_origin
 import cabula
 import rclayout
+import git
 app = Flask(__name__)
 CORS(app)
 
 dicto = cabula.get_dict()
 
 killswitch = False
+
+
+@app.route('/update_server', methods=['POST'])
+def webhook():
+    if request.method == 'POST':
+        repo = git.Repo('./mysite/.git')
+        origin = repo.remotes.origin
+        origin.pull()
+        return 'Updated PythonAnywhere successfully', 200
+    else:
+        return 'Wrong event type', 400
 
 #?b=alex
 @app.route('/')
