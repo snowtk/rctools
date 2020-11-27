@@ -37,7 +37,7 @@ calla
 spenon 1724612144
 Na figura, “Cell A” com o endereco IP 10.0.0.34, estabeleceu uma sessdo com 0 “IP Phone
 1” com o endereco 172.16.1.103. Qual o tipo de dispositivo que melhor descreve a funcao
-do dispositivo sem-fios “Cell A’?""": {'cor': ["""r4"""], 'quest': [""" O dispositivo de destino
+do dispositivo sem-fios “Cell A’?""": {'cor': ["""r2"""], 'quest': [""" O dispositivo de destino
 
 """, """ Um dispositivo terminal
 
@@ -949,13 +949,13 @@ tem conectividade com os servidores. Qual é a possivel causa do problema?""": {
 
 """, """ O host A tem uma mascara de subrede mal configurada.
 """, """ E necessario NAT para a rede do host A."""]},
-         """E4Qual é o endereco de rede do host 172.25.67.99/23 em binario?""": {'cor': ["""r5"""], 'quest': ["""
+         """E4Qual é o endereco de rede do host 172.25.67.99/23 em binario?""": {'cor': ["""r3"""], 'quest': ["""
 10101100.00011001.01000011.00000000""", """
 10101100.00011001.01000011.11111111""", """
-10101100.00011001.01000010.90000000""", """
+10101100.00011001.01000010.00000000""", """
 10101100.00011001.01000010.01100011""", """
-10101100.oo0010001.01000011.61100010""", """
-10101100.00011001.o0000000.90000000
+10101100.00010001.01000011.01100010""", """
+10101100.00011001.00000000.00000000
 """]}, """E5Qual dos seguintes dispositivos de rede sao recomendados para a atribui¢do de enderecos
 IP estaticos? (escolha trés)""": {'cor': ["""r1""", """r2""", """r4"""], 'quest': [""" postos de trabalho locais
 """, """ servidores
@@ -1545,7 +1545,7 @@ utilizar a seguinte técnica""": {'cor': ["""r5"""], 'quest': [""" Tunneling
 """, """ Chaves publicas
 
 """, """ Chaves video ou audio"""]},
-         """I3Como se pode garantir que uma mensagem é apenas lida pelo destinatario?""": {'cor': ["""r2"""], 'quest': [""" Encriptando com a chave privada do remetente
+         """I3Como se pode garantir que uma mensagem é apenas lida pelo destinatario?""": {'cor': ["""r4"""], 'quest': [""" Encriptando com a chave privada do remetente
 
 """, """ Encriptando com a chave privada do destinatario
 
