@@ -1100,30 +1100,21 @@ do PC para o Laptop?""": {'cor': ["""r3"""], 'quest': ["""
 (RS)
 (R6)
 SOODAN="""]}, """F18Que frases sdo verdadeiras em relagdo aos enderecos encontrados em cada nivel do
-modelo OSI? (escolha duas)""": {'cor': ["""r1""", """r4"""], 'quest': ["""
+modelo OSI? (escolha duas)""": {'cor': ["""r1""", """r3"""], 'quest': ["""O nivel 2 pode identificar dispositivos pelo enderego fisico da placa derede
+""", """O nivel 2 identifica as aplicagdes que estéo a comunicar
+""", """O nivel 3 tem um esquema de enderecamento hierarquico
+""", """O nivel 4 direcciona as comunicagGes para a rede de destino apropriada
 """, """
-""", """
-""", """
-""", """
-O nivel 2 pode identificar dispositivos pelo enderego fisico da placa derede ——=
-O nivel 2 identifica as aplicagdes que estéo a comunicar
-O nivel 3 tem um esquema de enderecamento hierarquico —
-O nivel 4 direcciona as comunicagGes para a rede de destino apropriada
 Os enderegos do nivel 4 sao utilizados pelos dispositivos para encaminhar os
 dados"""]}, """F2so/0 $o/1
 Observe a figura. Esta a ser enviada uma trama do PC para o Laptop. Que enderecos
 MAC e IP de origem serao incluidos na trama ao sair do Router B? (escolha duas)""": {'cor': ["""r4""", """r3"""],
-                                                                                   'quest': ["""
+                                                                                   'quest': ["""MAC do PC de origem
+""", """MAC da porta SO0/0 do Router A
+""", """MAC da porta Fa0/1 do Router B
+""", """IP do PC de origem
+""", """IP da porta S0/0 do Router A
 """, """
-""", """
-""", """
-""", """
-""", """
-MAC do PC de origem
-MAC da porta SO0/0 do Router A
-MAC da porta Fa0/1 do Router B ==
-IP do PC de origem
-IP da porta S0/0 do Router A
 IP da porta Fa0/1 do Router B"""]}, """F3Que afirmagées sao verdadeiras em relagdo 4 utilizagdo de meios fisicos partilhados?
 (escolha trés)""": {'cor': ["""r1""", """r4""", """r2"""], 'quest': [""" Rede nao deterministica =
 """, """  Existe menos overhead ==
