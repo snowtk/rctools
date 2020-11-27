@@ -176,11 +176,11 @@ Rede do modelo TCPAP (escolha duas).""": {'cor': ["""r3""", """r4"""], 'quest': 
 """, """ Ligagado de Dados
 """, """ Sessao"""]}, """A9DESTINATION
 Na figura qual o termo que descreve o entrelacamento da informagéo no meio de
-transmissao partilhado.""": {'cor': ["""r3"""], 'quest': [""" Piping
+transmissao partilhado.""": {'cor': ["""r4"""], 'quest': [""" Piping
 
 """, """ PDU
 
-""", """ Streaming ——_—_—_——
+""", """ Streaming
 """, """ Multiplexing
 
 """, """ Encapsulation"""]}, """B1Um administrador de redes esta a desenhar uma rede para um novo escritorio com 25
@@ -202,7 +202,7 @@ duas).""": {'cor': ["""r1""", """r3"""], 'quest': [""" centraliza a administracd
 """, """ o SMTP suporta partilha de ficheiros
 
 """, """ o Telnet providéncia ligacées virtuais para acesso remoto"""]},
-         """B11Quais as propriedades das ligagées ponto-a-ponto? (escolha duas)""": {'cor': ["""r4""", """r1"""],
+         """B11Quais as propriedades das ligagées ponto-a-ponto? (escolha duas)""": {'cor': ["""r3""", """r1"""],
                                                                                      'quest': [""" comporta-se como cliente e servidor na comunicag¢éo —
 """, """ requer uma administrag¢ao centralizada
 
@@ -217,7 +217,7 @@ de ficheiros numa rede Microsoft?""": {'cor': ["""r3"""], 'quest': [""" DHCP
 
 """, """ SMTP
 
-""", """ Telnet"""]}, """B13Qual é um objectivo do nivel de aplicagaéo do modelo OSI?""": {'cor': ["""r2"""], 'quest': [""" fornecer segmentacao dos dados
+""", """ Telnet"""]}, """B13Qual é um objectivo do nivel de aplicagaéo do modelo OSI?""": {'cor': ["""r3"""], 'quest': [""" fornecer segmentacao dos dados
 
 """, """ fornecer encriptacdo e conversdo dos dados a=
 
@@ -383,7 +383,7 @@ determinado destino? (escolha trés)""": {'cor': ["""r6""", """r4""", """r1"""],
 
 """, """ servicos nao orientados a ligacao
 """, """ nuimeros de sequéncia e confirmacao"""]},
-         """C11O que é escolhido dinamicamente pelo host de origem quando encaminha dados?""": {'cor': ["""r3"""],
+         """C11O que é escolhido dinamicamente pelo host de origem quando encaminha dados?""": {'cor': ["""r4"""],
                                                                                                 'quest': [""" porto de destino
 
 """, """ endereco fisico do host local
@@ -423,7 +423,7 @@ aplicacées que nao necessitam de entrega fiavel de dados?""": {'cor': ["""r3"""
 """, """ HTTP
 """, """ DNS"""]}, """C14Depois de um web browser fazer um pedido para um servidor web, que esta a escuta no
 porto por omissdo, qual ¢ o porto de origem no cabegalho do segmento TCP da resposta
-do servidor?""": {'cor': ["""r5"""], 'quest': [""" 13
+do servidor?""": {'cor': ["""r3"""], 'quest': [""" 13
 """, """ 53
 """, """ 80
 """, """ 1024
@@ -433,7 +433,7 @@ do servidor?""": {'cor': ["""r5"""], 'quest': [""" 13
 
 """, """ o UDP estabelece o numero maximo de bytes a enviar num segmento
 """, """ 0 servidor confirma a recep¢ao de dados do utilizador"""]},
-         """C16Porque sao os nuimeros dos portos incluidos no cabecalho de um segmento TCP?""": {'cor': ["""r1"""],
+         """C16Porque sao os nuimeros dos portos incluidos no cabecalho de um segmento TCP?""": {'cor': ["""r4"""],
                                                                                                  'quest': [""" para indicar o porta para encaminhamento dos segmentos
 
 """, """ para indicar que portos do switch podem ser utilizados para receber ou enviar
@@ -468,7 +468,7 @@ S Actroviesiane! noe sez
 
 
 Em relacao a figura. Na linha 7 desta captura no WireShark, que operacdo
-de TCP esta a ser realizada?""": {'cor': ["""r3"""], 'quest': [""" estabelecimento de uma sessao
+de TCP esta a ser realizada?""": {'cor': ["""r1"""], 'quest': [""" estabelecimento de uma sessao
 """, """ retransmissdo de segmento
 """, """ transferéncia de dados
 
@@ -567,7 +567,7 @@ acontecer no servidor 1 em consequéncia deste facto?""": {'cor': ["""r2"""], 'q
 """, """ envia um bit de RESET para o Host A
 
 """, """ altera o tamanho da janela nos segmentos de nivel 4"""]},
-         """C6Qual é uma caracteristica importante do protocolo UDP?""": {'cor': ["""r4"""], 'quest': [""" confirma a entrega dos dados
+         """C6Qual é uma caracteristica importante do protocolo UDP?""": {'cor': ["""r2"""], 'quest': [""" confirma a entrega dos dados
 
 """, """ atraso minimo na entrega de dados
 
@@ -576,7 +576,7 @@ acontecer no servidor 1 em consequéncia deste facto?""": {'cor': ["""r2"""], 'q
 """, """ entrega dos dados pela mesma ordem de envio"""]}, """C7Host2
 Hostt
 Em relacao a figura. O Host1 esta a estabelecer uma sessdo de TCP com 0 Host2. Depois
-de o Host1 enviar uma mensagem com a flag SYN=1, 0 que acontece de seguida?""": {'cor': ["""r3"""], 'quest': [""" O Host1 envia um segmento com a flag ACK=0 e flag SYN=0 para o Host2.
+de o Host1 enviar uma mensagem com a flag SYN=1, 0 que acontece de seguida?""": {'cor': ["""r6"""], 'quest': [""" O Host1 envia um segmento com a flag ACK=0 e flag SYN=0 para o Host2.
 """, """ O Host1 envia um segmento com a flag ACK=1 e flag SY! para o Host2.
 """, """ O Host1 envia um segmento com a flag ACK=1 e flag SY! para 0 Host2. —_——_s
 """, """ O Host2 envia um segmento com a flag ACK=0 e flag SY! para o Host1.
@@ -660,7 +660,7 @@ de uma interface do router para outra?""": {'cor': ["""r1"""], 'quest': [""" end
 """, """ endereco MAC da fonte
 
 """, """ numero do porto de destino"""]}, """D16Quando a rede de destino nao se encontra referenciada na tabela de routing, qual sao as
-accées possiveis para o router? (escolha duas)""": {'cor': ["""r3""", """r5"""], 'quest': [""" O router envia um ARP request para determinar 0 endereco do proximo salto
+accées possiveis para o router? (escolha duas)""": {'cor': ["""r2""", """r5"""], 'quest': [""" O router envia um ARP request para determinar 0 endereco do proximo salto
 """, """ O router descarta a mensagem.
 
 """, """ O router encaminha a mensagem na direc¢ado do proximo salto indicado na
@@ -734,7 +734,7 @@ redes? (escolha duas)""": {'cor': ["""r3""", """r4"""], 'quest': [""" router
 
 
 
-Quais as op¢ées que descrevem o routing para a topologia da figura? (escolha duas)""": {'cor': ["""r1""", """r3"""],
+Quais as op¢ées que descrevem o routing para a topologia da figura? (escolha duas)""": {'cor': ["""r1""", """r5"""],
                                                                                         'quest': [
                                                                                             """ 192.168.0.2 6 0 endereco do proximo salto """,
                                                                                             """ 10.0.0.1 é o endereco do proximo salto """,
@@ -794,7 +794,7 @@ Na figura, qual devera ser o endereco do default gateway para o host A na rede
 
 """, """ 192.133.219.0
 """, """ 192.133.219.1"""]}, """D7Qual das frases so correctas sobre rotas e a sua utilizacao? (escolha trés)""": {
-        'cor': ["""r1""", """r2""", """r4"""], 'quest': [""" Se nao for encontrada uma rota para a rede de destino, a mensagem é
+        'cor': ["""r5""", """r2""", """r4"""], 'quest': [""" Se nao for encontrada uma rota para a rede de destino, a mensagem é
 devolvida ao router anterior.
 
 """, """ Se arede de destino estiver directamente ligada, o router envia a mensagem
