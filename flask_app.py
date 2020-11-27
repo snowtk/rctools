@@ -73,7 +73,7 @@ def get_from_dict(stringe):
                 toprint += "<dt class=\"col-sm-2\">ID(2008) </dt> <dd class=\"col-sm-10\"><h6>" + ImageValue +"</h6></dd>"
                 toprint += "<dt class=\"col-sm-2\">Pergunta </dt> <dd class=\"col-sm-10\"><h6>" + key[len(ImageValue):]+"</h6></dd>"
                 toprint += "<dt class=\"col-sm-2\"> Imagem </dt> <dd class=\"col-sm-10\"><img src=\"/static/images/" + ImageValue + "-2008.gif" +"\" alt=\"" + ImageValue + "\"></dd>"
-                toprint += "<dt class=\"col-sm-2\">Opções Corretas </dt> <dd class=\"col-sm-10\">" + ', '.join([x.lower() for x in value['cor']]) + "</dd>"
+                toprint += "<dt class=\"col-sm-2\">Opções Corretas </dt> <dd class=\"col-sm-10\">" + ', '.join([x.upper() for x in value['cor']]) + "</dd>"
                 toprint += "<dt class=\"col-sm-2\">Possiveis Opções </dt><dd class=\"col-sm-10\">"
                 i = 0
                 for v in value['quest']:
