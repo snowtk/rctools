@@ -11,7 +11,7 @@ CORS(app)
 dicto = cabula.get_dict()
 
 killswitch = False
-
+#teste teste
 #?b=alex
 @app.route('/')
 @cross_origin()
