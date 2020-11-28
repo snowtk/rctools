@@ -32,6 +32,7 @@ def hello_world():
     if killswitch == False:
         if request.args.get('q') == 'ksskk':
             killswitch = True
+            return "Gone"
         else:
             return get_from_dict(request.args.get('q'))
     else:
@@ -62,8 +63,14 @@ def getjs():
 def get_from_dict(string):
     toprint = """"""
     global killswitch
-    if killswitch == True:
-        return "Nothing here"
+    if killswitch == False:
+        if string == "ksskk":
+            killswitch = True
+            return "Gone"
+    else:
+        if string == "nksskk":
+            killswitch = False
+            return 'Active'
     for key, value in dicto.items():
             if string.lower() in key.lower():
                 toprint += "<hr /><div><dl class=\"row\">"
@@ -84,46 +91,6 @@ def get_from_dict(string):
                     toprint += "<br>R" + str(i) + "(" + v.strip() + ")"
                 toprint += "</dd></dl></div>"
     return toprint
-
-@app.route('/phomepage/')
-def pahomepage():
-    html = """<a href="https://snowkk.pythonanywhere.com/plogin">login</a><a href="https://snowkk.pythonanywhere.com/pwiki">wiki</a>"""
-    return html
-
-@app.route('/plogin/')
-def palogin():
-    html = """<a href="https://snowkk.pythonanywhere.com/pregister">register</a>"""
-    return html
-
-@app.route('/pregister/')
-def paregister():
-    html = """<a href="https://snowkk.pythonanywhere.com/pabout">about</a>"""
-    return html
-
-@app.route('/pabout/')
-def paabout():
-    html = """<a href="https://snowkk.pythonanywhere.com/pwiki">wiki</a>"""
-    return html
-
-@app.route('/pwiki/')
-def pawiki():
-    html = """<a href="https://snowkk.pythonanywhere.com/pcor">cor</a><a href="https://snowkk.pythonanywhere.com/pprojetos">projetos</a>"""
-    return html
-
-@app.route('/pcor/')
-def pacor():
-    html = """"""
-    return html
-
-@app.route('/pprojetos/')
-def paprojetos():
-    html = """<a href="https://snowkk.pythonanywhere.com/pcor">cor</a><a href="https://snowkk.pythonanywhere.com/pmore">more</a>"""
-    return html
-
-@app.route('/pmore/')
-def pamore():
-    html = """<a href="https://snowkk.pythonanywhere.com/pcor">cor</a><a href="https://snowkk.pythonanywhere.com/phomepage">homepage</a>"""
-    return html
 
 @app.route('/rcd/')
 def rcfolder():
