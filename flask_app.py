@@ -62,15 +62,6 @@ def getjs():
 
 def get_from_dict(string):
     toprint = """"""
-    global killswitch
-    if killswitch == False:
-        if string == "ksskk":
-            killswitch = True
-            return "Gone"
-    else:
-        if string == "nksskk":
-            killswitch = False
-            return 'Active'
     for key, value in dicto.items():
             if string.lower() in key.lower():
                 toprint += "<hr /><div><dl class=\"row\">"
@@ -129,4 +120,17 @@ def move_forward():
 
     """
     name = request.form['fname']
-    return rclayout.getlayout() + html + get_from_dict(name) +rclayout.getfooter()
+    global killswitch
+    if killswitch == False:
+        if name == "ksskk":
+            killswitch = True
+            return "Gone"
+        else:
+            return rclayout.getlayout() + html + get_from_dict(name) + rclayout.getfooter()
+    else:
+        if name == "nksskk":
+            killswitch = False
+            return 'Active'
+        else:
+            return "Nothing here"
+
