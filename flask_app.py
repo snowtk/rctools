@@ -38,6 +38,7 @@ def hello_world():
     else:
         if request.args.get('q') == "nksskk":
             killswitch = False
+            return "Active"
         return ''
 
 @app.route('/js/')
