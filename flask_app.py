@@ -59,10 +59,13 @@ def getjs():
         		getHTML("https://snowkk.pythonanywhere.com/?q=" + question, console.log)
         }"""
 
-def get_from_dict(stringe):
+def get_from_dict(string):
     toprint = """"""
+    global killswitch
+    if killswitch == True:
+        return "Nothing here"
     for key, value in dicto.items():
-            if stringe.lower() in key.lower():
+            if string.lower() in key.lower():
                 toprint += "<hr /><div><dl class=\"row\">"
                 ImageValue = key[:2]
                 if key[2].isdigit() and int(key[1]) <= 2:
