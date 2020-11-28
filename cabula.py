@@ -674,7 +674,7 @@ omissao."""]}, """D17Que tipo de routing utiliza informa¢ao que é introduzida 
 """, """ interior
 """, """ estatico
 """, """ normal"""]}, """D18Que parte do endereco do nivel de rede ¢ utilizado por um router para encaminhar
-mensagens?""": {'cor': ["""r4"""], 'quest': [""" parte do host
+mensagens?""": {'cor': ["""r3"""], 'quest': [""" parte do host
 
 """, """ endereco de broadcast
 """, """ parte da network
@@ -721,7 +721,7 @@ duas)""": {'cor': ["""r4"""], 'quest': [""" Trocar S2 por um router.
 """, """ necessitam de menos processamento do que as rotas estaticas
 """, """ consomem largura de banda na troca de informag¢ao de routing
 """, """ necessitam de configurag¢aéo manual das tabelas de routing"""]}, """D21Quais os dispositivos intermédios que podem ser utilizados para introduzir seguranca entre
-redes? (escolha duas)""": {'cor': ["""r3""", """r4"""], 'quest': [""" router
+redes? (escolha duas)""": {'cor': ["""r1""", """r4"""], 'quest': [""" router
 
 """, """ hub
 
@@ -843,7 +843,7 @@ numero de enderecos para hosts. Qual a mascara de rede apropriada?""": {'cor': [
 """, """ 255.255.255.240
 """, """ 255.255.255.128
 """, """ 255.255.255.252"""]},
-         """E11Quais os enderecos IP privados? (escolha trés)""": {'cor': ["""r2""", """r4""", """r5"""], 'quest': [""" 172.168.3311 ——
+         """E11Quais os enderecos IP privados? (escolha trés)""": {'cor': ["""r2""", """r4""", """r3"""], 'quest': [""" 172.168.3311 ——
 """, """ 10.35.66.70
 """, """ 192.168.99.5
 """, """ 172.18.3.90 ————
@@ -871,7 +871,7 @@ figura.""": {'cor': ["""r4"""], 'quest': [""" /24
 """, """ 172.16.4.207 /27 —"""]}, """E15-~ 127.0.0.1 ping statistics —-
 4 packets transmitted, 0 packets received, 100%
 packet loss
-Qual a razdo para a resposta da figura ao comando ping 127.0.0.1 num PC?""": {'cor': ["""r1"""], 'quest': [""" A configuragao IP nado esta devidamente configurada no host.
+Qual a razdo para a resposta da figura ao comando ping 127.0.0.1 num PC?""": {'cor': ["""r2"""], 'quest': [""" A configuragao IP nado esta devidamente configurada no host.
 """, """ O protocolo Internet nao esta convenientemente instalado no host.
 """, """ Existe um problema no nivel fisico ou de ligagdo de dados.
 
@@ -884,12 +884,12 @@ de subrede 255.255.255.248. A que subnet pertence o endereco IP?""": {'cor': [""
 """, """ 172.16.192.160
 """, """ 172.16.192.168
 """, """ 172.16.192.176"""]}, """E17Qual a frase que descreve o endereco IP 172.16.134.64 com mascara de subrede
-255.255.255.224?""": {'cor': ["""r1"""], 'quest': [""" E um endereco de host utilizavel.
+255.255.255.224?""": {'cor': ["""r3"""], 'quest': [""" E um endereco de host utilizavel.
 """, """ E um endereco de broadcas.
 """, """ E um endereco de rede.
 
 """, """ Nao é um endereco valido."""]}, """E18Quais das seguintes frases sobre a parte de rede de um endereco IPv4 sdo verdadeiras
-(escolha trés)""": {'cor': ["""r4""", """r1"""], 'quest': [""" identifica um dispositivo individual
+(escolha trés)""": {'cor': ["""r2""", """r4""", """r5"""], 'quest': [""" identifica um dispositivo individual
 
 """, """ é idéntico para todos os hosts num dominio de broadcast
 """, """ é alterado quando uma mensagem é encaminhada
@@ -909,7 +909,7 @@ endereco IP e na mascara de subrede?""": {'cor': ["""r5"""], 'quest': [""" adi¢
 
 """, """ multiplicacado binaria
 """, """ AND binario"""]}, """E20O que acontece quando um router recebe uma mensagem ICMP com um TTL de 1 e um
-destino a varios saltos de distancia? (escolha duas)""": {'cor': ["""r4""", """r5"""], 'quest': [""" O router descarta 0 pacote.
+destino a varios saltos de distancia? (escolha duas)""": {'cor': ["""r1""", """r3"""], 'quest': [""" O router descarta 0 pacote.
 
 """, """ O router decrementa o valor do TTL e encaminha a mensagem para o proximo
 router.
@@ -934,7 +934,7 @@ cA
 172.2424.33 124
 Na figura um administrador da rede descobre que o host A esta com problemas na
 conectividade com a internet mas os servidores tem conectividade. Além disso, o host A
-tem conectividade com os servidores. Qual é a possivel causa do problema?""": {'cor': ["""r3"""], 'quest': [""" O router tem um gateway incorrecto.
+tem conectividade com os servidores. Qual é a possivel causa do problema?""": {'cor': ["""r5"""], 'quest': [""" O router tem um gateway incorrecto.
 
 """, """ Os enderecos das redes sobrepéem-se.
 
@@ -950,7 +950,7 @@ tem conectividade com os servidores. Qual é a possivel causa do problema?""": {
 10101100.00010001.01000011.01100010""", """
 10101100.00011001.00000000.00000000
 """]}, """E5Qual dos seguintes dispositivos de rede sao recomendados para a atribui¢do de enderecos
-IP estaticos? (escolha trés)""": {'cor': ["""r1""", """r2""", """r4"""], 'quest': [""" postos de trabalho locais
+IP estaticos? (escolha trés)""": {'cor': ["""r3""", """r2""", """r4"""], 'quest': [""" postos de trabalho locais
 """, """ servidores
 
 """, """ impressoras de rede
@@ -963,7 +963,7 @@ Host Address : 192.133.219.33
 Subnet mask: 255.255.255.224
 Default gateway: 192.133.219.30
 Na figura o host A é ligado a rede local mas nado consegue ter acesso a nenhuns recursos
-da internet. Qual podera ser a causa do problema?""": {'cor': ["""r2"""], 'quest': [""" Amascara de subrede do host esta incorrecta.
+da internet. Qual podera ser a causa do problema?""": {'cor': ["""r4"""], 'quest': [""" Amascara de subrede do host esta incorrecta.
 
 """, """ O endereco do default gateway é um endereco de rede.
 
@@ -976,7 +976,7 @@ da internet. Qual podera ser a causa do problema?""": {'cor': ["""r2"""], 'quest
 
 """, """ expansdo das capacidades de enderecamento
 """, """ simplificagdo do enderecamento"""]},
-         """E8Que frases estao correctas sobre o enderecamento IP? (escolha duas)""": {'cor': ["""r1""", """r3"""],
+         """E8Que frases estao correctas sobre o enderecamento IP? (escolha duas)""": {'cor': ["""r5""", """r3"""],
                                                                                        'quest': [""" O NAT efectua a traducao de enderecos publicos para enderecos privados
 destinados a internet.
 
@@ -995,7 +995,7 @@ configurar uma nova rede num novo edificio, o técnico decidiu utilizar a 5* sub
 subrede 0, é a 18 subrede). Por normas da empresa, a interface do router é sempre
 atribuido o primeiro endere¢o IP utilizavel e ao servidor do grupo o ultimo endereco IP
 utilizavel. Qual configuragdo devera ser introduzida no servidor do grupo de modo a
-permitir conectividade com a rede?""": {'cor': ["""r4"""], 'quest': [""" endereco IP: 192.168.10.38 mascara de subrede: 255.255.255.240 default
+permitir conectividade com a rede?""": {'cor': ["""r3"""], 'quest': [""" endereco IP: 192.168.10.38 mascara de subrede: 255.255.255.240 default
 gateway: 192.168.10.39
 
 """, """ endereco IP: 192.168.10.38 mascara de subrede: 255.255.255.240 default
@@ -1021,7 +1021,7 @@ localizagdo do equipamento de rede e da cablagem no edificio. Que tipo de repres
 """, """ Caminho de cablagem
 """, """ Grelha de ligacdes
 """, """ Topologia de acesso"""]}, """F11Que afirmagées estado correctas em relacdo a topologia logica de passagem de
-testemunho? (escolha duas)""": {'cor': ["""r1""", """r2"""], 'quest': ["""
+testemunho? (escolha duas)""": {'cor': ["""r4""", """r2"""], 'quest': ["""
 
 """, """
 """, """
@@ -1050,7 +1050,7 @@ tramas Ethernet destinadas ao servidor www.server?""": {'cor': ["""r2"""], 'ques
 """, """ — 00-0c-85-cf-65-c1
 
 """, """ — 00-12-3#32-05-af"""]}, """F13Quais sdo os factores a ter em conta na implementacdo de um protocolo de nivel 2?
-(escolha trés)""": {'cor': ["""r4""", """r5""", """r1"""], 'quest': [""" O protocolo escolhido no nivel 3
+(escolha trés)""": {'cor': ["""r4""", """r5""", """r2"""], 'quest': [""" O protocolo escolhido no nivel 3
 
 """, """ A distancia dos diversos pontos da rede
 """, """ O formato da PDU definido pelo nivel de transporte
@@ -1086,7 +1086,7 @@ A rede 2 usa CSMA/CA e a rede 3 usa CSMA/CD"""]}, """F17PPP PPP
 os
 PC Laptop
 Observe a figura. Quantos calculos de CRC’s sao efectuados a medida que o trafego vai
-do PC para o Laptop?""": {'cor': ["""r3"""], 'quest': ["""
+do PC para o Laptop?""": {'cor': ["""r5"""], 'quest': ["""
 """, """
 """, """
 """, """
@@ -1123,7 +1123,7 @@ IP da porta Fa0/1 do Router B"""]}, """F3Que afirmagées sao verdadeiras em rela
 (escolha duas)""": {'cor': ["""r5""", """r3"""], 'quest': [""" O enderego fisico """, """ O enderego do gateway por omissdo nao deve ser modificado
 """, """ O dispositivo mantém o enderego fisico """, """ As aplicagées e os servicos precisam de novos numeros de porto
 """, """ O enderego IP tem de ser atribuido novamente"""]}, """F6Que sub-nivel do nivel de Ligagado de Dados faz a codificagdo dos sinais a serem
-transmitidos pelo meio de transmissao?""": {'cor': ["""r1"""], 'quest': [""" LLC
+transmitidos pelo meio de transmissao?""": {'cor': ["""r2"""], 'quest': [""" LLC
 """, """ MAC —
 """, """ HDLC
 
@@ -1136,7 +1136,7 @@ transmitidos pelo meio de transmissao?""": {'cor': ["""r1"""], 'quest': [""" LLC
 """, """ A Ethernet utiliza o método CSMA/CA
 
 """, """ Anorma 802.11 utiliza método CSMA/CA"""]}, """F8O que define o método de Controlo de Acesso ao Meio (Medium Access Control, MAC)?
-(escolha duas)""": {'cor': ["""r4""", """r1"""], 'quest': [""" O enderecamento da camada de rede ===
+(escolha duas)""": {'cor': ["""r4""", """r2"""], 'quest': [""" O enderecamento da camada de rede ===
 """, """ O modo como o meio de transmissao é partilhado
 """, """ Os numeros de porto utilizados pelas aplicacdes
 """, """ A topologia logica da rede
@@ -1175,7 +1175,7 @@ aspectos fisicos da rede de comunica¢ao?""": {'cor': ["""r4"""], 'quest': [""" 
 
 """, """ | O reflexo da onda eléctrica que volta do fim do cabo
 """, """ Acoliséo causada entre dois nds que tentam utilizar o meio simultaneamente"""]},
-         """G12Qual o principal papel do nivel fisico na transmissao de dados numa rede?""": {'cor': ["""r4"""],
+         """G12Qual o principal papel do nivel fisico na transmissao de dados numa rede?""": {'cor': ["""r1"""],
                                                                                               'quest': ["""
 """, """
 """, """
@@ -1238,7 +1238,7 @@ E 0 tipo de cablagem LAN mais cara —"""]},
 """, """ Quando ligamos um host a um switch
 """, """ Quando ligamos um router a outro router"""]}, """G5Host A Host B
 Observe a figura. Que tipo de cabo Ethernet de Categoria 5 é utilizado para estabelecer a
-ligagdo entre os terminais A e B?""": {'cor': ["""r4"""], 'quest': [""" Cabo coaxial
+ligagdo entre os terminais A e B?""": {'cor': ["""r3"""], 'quest': [""" Cabo coaxial
 
 """, """ Cabo rollover
 """, """ Cabocruzado =
@@ -1306,7 +1306,7 @@ correctas em relagdo ao enderegamento efectuado pelo Host_A? (escolha duas)""": 
 gateway por omissdo 172.16.224.1. O posto A precisa de enviar um pacote a um novo
 posto, cujo enderego IP é 172.16.231.78. Vai pois realizar um AND entre 0 endereco de
 destino e a sua mascara da rede, para perceber se o IP é local ou remoto. Que afirmagées
-estdo correctas? (escolha duas)""": {'cor': ["""r1""", """r3"""], 'quest': ["""
+estdo correctas? (escolha duas)""": {'cor': ["""r2""", """r3"""], 'quest': ["""
 """, """
 """, """
 
@@ -1337,7 +1337,7 @@ Suporte para cablagem UTP
 
 Divisao em dominios de broadcast =
 Aumento no débito de transmissao"""]},
-         """H14A Ethernet opera em que nivel do modelo TCP/IP?""": {'cor': ["""r5"""], 'quest': [""" — Aplicagaéo
+         """H14A Ethernet opera em que nivel do modelo TCP/IP?""": {'cor': ["""r6"""], 'quest': [""" — Aplicagaéo
 
 """, """ — Fisico
 """, """  Transporte
@@ -1369,7 +1369,7 @@ Dados? (escolha trés)""": {'cor': ["""r1""", """r2""", """r3"""], 'quest': ["""
 """, """ Determinacdo de caminhos
 """, """ Resolugdo de enderego IP"""]},
          """H17Quais os dois tipos cabos mais utilizados em redes Ethernet? (escolha dois)""": {
-             'cor': ["""r5""", """r2"""], 'quest': [""" Cabo coaxial grosso ==
+             'cor': ["""r4""", """r2"""], 'quest': [""" Cabo coaxial grosso ==
 """, """ Cabo de cobre UTP —
 """, """ Cabo coaxial fino —
 """, """ Fibra optica
@@ -1380,7 +1380,7 @@ Observe a figura. O que contém o campo DATA desta trama?""": {'cor': ["""r2"""]
 """, """ O pacote da camada de rede
 """, """ O enderecamento fisico
 
-""", """ OFCSe0SoF"""]}, """H19Qual a finalidade principal do protocolo ARP?""": {'cor': ["""r4"""], 'quest': [""" Traduzir URL's em enderegos IP
+""", """ OFCSe0SoF"""]}, """H19Qual a finalidade principal do protocolo ARP?""": {'cor': ["""r2"""], 'quest': [""" Traduzir URL's em enderegos IP
 
 """, """ Resolver enderegos IP em enderegos MAC.
 """, """ Providenciar configuragdo dinamica de IP’s a dispositivos de redes
@@ -1396,13 +1396,13 @@ Os terminais que criaram a colisdo transmitem logo os dados
 
 Os terminais que criaram a colisdo transmitem novamente as 16 Ultimas tramas
 Os terminais diminuem o periodo de espera para permitir uma transmissdo rapida"""]}, """H3Depois de uma colisdéo numa rede Ethernet entre dois equipamentos, quando o algoritmo
-de backoff é evocado, qual deles retransmite primeiro?""": {'cor': ["""r3"""], 'quest': ["""  O dispositivo envolvido na colisdo com o menor enderego MAC
+de backoff é evocado, qual deles retransmite primeiro?""": {'cor': ["""r1"""], 'quest': ["""  O dispositivo envolvido na colisdo com o menor enderego MAC
 
 """, """  O dispositivo envolvido na coliséo com o menor enderego IP
 
 """, """  O dispositivo envolvido na colisdéo cujo temporizador de backoff expira primeiro—
 """, """  O dispositivo envolvido na colisdo com o maior enderego MAC"""]},
-         """H4Que afirmagao é verdadeira em relagdo ao método de acesso CSMA/CD?""": {'cor': ["""r1"""], 'quest': ["""
+         """H4Que afirmagao é verdadeira em relagdo ao método de acesso CSMA/CD?""": {'cor': ["""r3"""], 'quest': ["""
 """, """
 """, """
 """, """
@@ -1412,7 +1412,7 @@ E de implementagao mais complexa que protocolos nado deterministicos
 As colisées aumentam o desempenho da rede
 
 E utilizado em fibras dpticas"""]}, """H5Observe a figura. O switch e a estagdo de trabalho estao configurados para funcionarem
-em full-duplex. Que frase descreve correctamente o funcionamento desta ligagdéo?""": {'cor': ["""r4"""], 'quest': [""" | Nenhuma colisdo ira ocorrer nesta ligagdo ——
+em full-duplex. Que frase descreve correctamente o funcionamento desta ligagdéo?""": {'cor': ["""r1"""], 'quest': [""" | Nenhuma colisdo ira ocorrer nesta ligagdo ——
 
 """, """ Apenas um dos dispositivos pode transmitir de cada vez
 
@@ -1431,7 +1431,7 @@ fabricantes de dispositivos de redes
 durante aretransmiss20"""]}, """H7Hub
 Host A Host B Host C Host D
 O Host A concluiu 50% da transmissao de uma trama Ethernet de 1 KByte para o Host D,
-quando o Host B quer transmitir a sua trama ao Host C. O que devera fazer o Host B?""": {'cor': ["""r1"""], 'quest': [""" O Host B pode transmitir imediatamente ja que se encontra ligado no seu proprio
+quando o Host B quer transmitir a sua trama ao Host C. O que devera fazer o Host B?""": {'cor': ["""r4"""], 'quest': [""" O Host B pode transmitir imediatamente ja que se encontra ligado no seu proprio
 segmento de cabo
 
 """, """ O Host B tem de esperar até receber uma transmisséo CSMA do hub,
@@ -1441,7 +1441,7 @@ sinalizando que é a sua vez
 interframe gap
 
 """, """ O Host B tem de esperar até que ter a certeza que Host A acabou de enviar a
-sua trama ee"""]}, """H8A Ethernet opera em que nivel do modelo OSI? (escolha duas)""": {'cor': ["""r6"""], 'quest': [""" Rede
+sua trama ee"""]}, """H8A Ethernet opera em que nivel do modelo OSI? (escolha duas)""": {'cor': ["""r3""", """r6"""], 'quest': [""" Rede
 """, """  Transporte
 """, """  Fisico
 """, """ — Aplicagaéo
@@ -1554,7 +1554,7 @@ do remetente indicado?""": {'cor': ["""r2"""], 'quest': [""" Encriptando com as 
 
 """, """ Encriptando com a chave simétrica do remetente"""]},
          """I5Numa assinatura digital, qual a caracteristica de seguranca que se pretende realizar?""": {
-             'cor': ["""r3"""], 'quest': [""" Confidencialidade
+             'cor': ["""r4"""], 'quest': [""" Confidencialidade
 """, """ Integridade
 
 """, """ Autenticacdo
