@@ -83,15 +83,6 @@ def get_from_dict(string):
                 toprint += "</dd></dl></div>"
     return toprint
 
-@app.route('/rcd/')
-def rcfolder():
-    global killswitch
-    if killswitch == True:
-        return ""
-    html = """https://drive.google.com/open?id=1bgJsQ4NmvWyEA4TzQtr4QXxC9r9cQXr9"""
-    return html
-
-
 @app.route('/rcindex/')
 def rcindex():
     global killswitch
