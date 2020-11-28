@@ -28,12 +28,6 @@ rclayout = """
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="https://docs.google.com/spreadsheets/d/1p6w_7xN6rwiS7xESHD_QX32YzlfqkDeEFJRCdFVxxUs/edit?usp=sharing">Matriz</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="https://mega.nz/folder/VMAXBKDD#nbWJ8JpOspKq__XjcEK68Q/folder/lBIUVQiS">BreuBreu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="https://onlinegdb.com/SyHOHHicv">Offline Version</a>
-                        </li>
                     </ul>
                 </div>
             </div>

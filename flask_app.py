@@ -85,12 +85,18 @@ def get_from_dict(string):
 
 @app.route('/rcd/')
 def rcfolder():
+    global killswitch
+    if killswitch == True:
+        return ""
     html = """https://drive.google.com/open?id=1bgJsQ4NmvWyEA4TzQtr4QXxC9r9cQXr9"""
     return html
 
 
 @app.route('/rcindex/')
 def rcindex():
+    global killswitch
+    if killswitch == True:
+        return ""
     return rclayout.getlayout() + "<img src=\"https://www.portalgsti.com.br/media/uploads/marcomascarenhas/rede-de-computadores.jpg\">" + rclayout.getfooter()
 
 
@@ -105,6 +111,9 @@ def pedrokey():
 
 
     """
+    global killswitch
+    if killswitch == True:
+        return ""
     return rclayout.getlayout() + html +rclayout.getfooter()
 
 @app.route("/rcInputKey/", methods=['POST'])
