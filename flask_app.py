@@ -6,6 +6,7 @@ from flask_cors import CORS,cross_origin
 import cabula
 import rclayout
 import git
+import sys
 app = Flask(__name__)
 CORS(app)
 
@@ -61,27 +62,46 @@ def getjs():
         		getHTML("https://snowkk.pythonanywhere.com/?q=" + question, console.log)
         }"""
 
-def get_from_dict(string):
+def pretty_print_question(string, key, value):
     toprint = """"""
-    for key, value in dicto.items():
-            if string.lower() in key.lower():
-                toprint += "<hr /><div><dl class=\"row\">"
-                ImageValue = key[:2]
-                if key[2].isdigit() and int(key[1]) <= 2:
-                    if int(key[1]) == 1:
-                        ImageValue += key[2]
-                    elif int(key[1]) == 2 and int(key[2]) < 2:
-                        ImageValue += key[2]
-                toprint += "<dt class=\"col-sm-2\">ID(2008) </dt> <dd class=\"col-sm-10\"><h6>" + ImageValue +"</h6></dd>"
-                toprint += "<dt class=\"col-sm-2\">Pergunta </dt> <dd class=\"col-sm-10\"><h6>" + key[len(ImageValue):]+"</h6></dd>"
-                toprint += "<dt class=\"col-sm-2\"> Imagem </dt> <dd class=\"col-sm-10\"><img src=\"/static/images/" + ImageValue + "-2008.gif" +"\" alt=\"" + ImageValue + "\"></dd>"
-                toprint += "<dt class=\"col-sm-2\">Opções Corretas </dt> <dd class=\"col-sm-10\">" + ', '.join([x.upper() for x in value['cor']]) + "</dd>"
-                toprint += "<dt class=\"col-sm-2\">Possiveis Opções </dt><dd class=\"col-sm-10\">"
-                i = 0
-                for v in value['quest']:
-                    i += 1
-                    toprint += "<br>R" + str(i) + "(" + v.strip() + ")"
-                toprint += "</dd></dl></div>"
+    toprint += "<hr /><div><dl class=\"row\">"
+    ImageValue = key[:2]
+    if key[2].isdigit() and int(key[1]) <= 2:
+        if int(key[1]) == 1:
+            ImageValue += key[2]
+        elif int(key[1]) == 2 and int(key[2]) < 2:
+            ImageValue += key[2]
+    toprint += "<dt class=\"col-sm-2\">ID(2008) </dt> <dd class=\"col-sm-10\"><h6>" + ImageValue + "</h6></dd>"
+    toprint += "<dt class=\"col-sm-2\">Pergunta </dt> <dd class=\"col-sm-10\"><h6>" + key[
+                                                                                      len(ImageValue):] + "</h6></dd>"
+    toprint += "<dt class=\"col-sm-2\"> Imagem </dt> <dd class=\"col-sm-10\"><img src=\"/static/images/" + ImageValue + "-2008.gif" + "\" alt=\"" + ImageValue + "\"></dd>"
+    toprint += "<dt class=\"col-sm-2\">Opções Corretas </dt> <dd class=\"col-sm-10\">" + ', '.join(
+        [x.upper() for x in value['cor']]) + "</dd>"
+    toprint += "<dt class=\"col-sm-2\">Possiveis Opções </dt><dd class=\"col-sm-10\">"
+    i = 0
+    for v in value['quest']:
+        i += 1
+        toprint += "<br>R" + str(i) + "(" + v.strip() + ")"
+    toprint += "</dd></dl></div>"
+    return toprint;
+
+def get_from_dict(string, per=True,ques=False):
+    toprint = """"""
+    added = []
+    if per:
+        for key, value in dicto.items():
+                if (string.lower() if string is not None else "") in key.lower():
+                    added.append(key.lower())
+                    toprint += pretty_print_question(string,key,value)
+    if ques:
+        for key, value in dicto.items():
+            add = False
+            for v in value['quest']:
+                if (string.lower() if string is not None else "") in v.lower():
+                    add = True
+            if add and key.lower() not in added:
+                added.append(key.lower())
+                toprint += pretty_print_question(string,key,value)
     return toprint
 
 @app.route('/rcindex/')
@@ -94,40 +114,24 @@ def rcindex():
 
 @app.route('/rc/')
 def pedrokey():
-    html = """
-    <form action="/rcInputKey/" method="post">
-    <label for="fname">Parte da Pergunta:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <button name="forwardBtn" type="submit">Submeter</button>
-    </form><br>
-
-
-    """
     global killswitch
     if killswitch == True:
         return ""
-    return rclayout.getlayout() + html +rclayout.getfooter()
+    return rclayout.getlayout() + rclayout.get_question_bar() +rclayout.getfooter()
 
 @app.route("/rcInputKey/", methods=['POST'])
 def move_forward():
-    voltar = """<a href="https://snowkk.pythonanywhere.com/rc">Voltar atras</a><br>"""
-    html = """
-    <form action="/rcInputKey/" method="post">
-    <label for="fname">Parte da Pergunta:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <button name="forwardBtn" type="submit">Submeter</button>
-    </form><br>
-
-
-    """
+    print(request.form)
     name = request.form['fname']
+    ques = "fper" in request.form
+    res = "fques" in request.form
     global killswitch
     if killswitch == False:
         if name == "ksskk":
             killswitch = True
             return "Gone"
         else:
-            return rclayout.getlayout() + html + get_from_dict(name) + rclayout.getfooter()
+            return rclayout.getlayout() + rclayout.get_question_bar() + get_from_dict(name,ques,res) + rclayout.getfooter()
     else:
         if name == "nksskk":
             killswitch = False

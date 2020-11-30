@@ -15,7 +15,7 @@ rclayout = """
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" href="https://snowkk.pythonanywhere.com/rcindex/">Rc & chill</a>
+                <a class="navbar-brand" href="/rcindex/">Rc & chill</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@ rclayout = """
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="https://snowkk.pythonanywhere.com/rc/">Question finder</a>
+                            <a class="nav-link text-dark" href="/rc/">Question finder</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="https://docs.google.com/spreadsheets/d/1p6w_7xN6rwiS7xESHD_QX32YzlfqkDeEFJRCdFVxxUs/edit?usp=sharing">Matriz</a>
@@ -48,6 +48,23 @@ rcfooter = """
 </html>
 """
 
+rc_question_bar = """
+    <form action="/rcInputKey/" method="post">
+    <div class ="d-flex"><div>
+    <input type="checkbox" id="fper" name="fper" checked>
+    <label for="fper">Pesquisar nas Pergunta</label><br>
+    </div> <div class="ml-2" style="border-left:2px solid black;height: 20px"></div> <div class="pl-2">
+    <input type="checkbox" id="fques" name="fques" checked>
+    <label for="fques">Pesquisar nas Respostas</label><br>
+    </div></div>
+    <label for="fname">Segmento a procurar:</label>
+    <input type="text" id="fname" name="fname"><br>
+    <button name="forwardBtn" class="btn btn-info" type="submit">Submeter</button>
+    </form><br>
+    """
+
+def get_question_bar():
+    return rc_question_bar
 def getlayout():
     return rclayout
 
