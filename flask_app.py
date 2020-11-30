@@ -1,7 +1,7 @@
 
 # A very simple Flask Hello World app for you to get started with...
 
-from flask import Flask, request
+from flask import Flask, request, abort
 from flask_cors import CORS,cross_origin
 import cabula
 import rclayout
@@ -40,12 +40,14 @@ def hello_world():
         if request.args.get('q') == "nksskk":
             killswitch = False
             return "Active"
+        abort(404)
         return ''
 
 @app.route('/js/')
 def getjs():
     global killswitch
     if killswitch == True:
+        abort(404)
         return ""
     else:
         return """var getHTML = function ( url, callback ) {
@@ -108,6 +110,7 @@ def get_from_dict(string, per=True,ques=False):
 def rcindex():
     global killswitch
     if killswitch == True:
+        abort(404)
         return ""
     return rclayout.getlayout() + "<img src=\"https://www.portalgsti.com.br/media/uploads/marcomascarenhas/rede-de-computadores.jpg\">" + rclayout.getfooter()
 
@@ -116,7 +119,8 @@ def rcindex():
 def pedrokey():
     global killswitch
     if killswitch == True:
-        return ""
+        abort(404)
+        return "This should not be returned"
     return rclayout.getlayout() + rclayout.get_question_bar() +rclayout.getfooter()
 
 @app.route("/rcInputKey/", methods=['POST'])
@@ -137,5 +141,6 @@ def move_forward():
             killswitch = False
             return 'Active'
         else:
+            abort(404)
             return "Nothing here"
 
