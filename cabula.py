@@ -1102,7 +1102,7 @@ Os enderegos do nivel 4 sao utilizados pelos dispositivos para encaminhar os
 dados"""]}, """F2so/0 $o/1
 Observe a figura. Esta a ser enviada uma trama do PC para o Laptop. Que enderecos
 MAC e IP de origem serao incluidos na trama ao sair do Router B? (escolha duas)""": {'cor': ["""r4""", """r3"""],
-                                                                                   'quest': ["""MAC do PC de origem
+                                                                                     'quest': ["""MAC do PC de origem
 """, """MAC da porta SO0/0 do Router A
 """, """MAC da porta Fa0/1 do Router B
 """, """IP do PC de origem
@@ -1441,7 +1441,8 @@ sinalizando que é a sua vez
 interframe gap
 
 """, """ O Host B tem de esperar até que ter a certeza que Host A acabou de enviar a
-sua trama ee"""]}, """H8A Ethernet opera em que nivel do modelo OSI? (escolha duas)""": {'cor': ["""r3""", """r6"""], 'quest': [""" Rede
+sua trama ee"""]},
+         """H8A Ethernet opera em que nivel do modelo OSI? (escolha duas)""": {'cor': ["""r3""", """r6"""], 'quest': [""" Rede
 """, """  Transporte
 """, """  Fisico
 """, """ — Aplicagaéo
@@ -1583,11 +1584,66 @@ cifrado, estamos a realizar""": {'cor': ["""r2"""], 'quest': [""" SSH
 """, """ SSL
 """, """ VPN
 """, """ Tunneling
-""", """ VLAN"""]}}
+""", """ VLAN"""]}, """Z2Quais são as duas afirmações corretas sobre endereços IPv4 e IPv6?(escolha duas)""": {'cor': ["""r1""", """r4"""],
+              'quest': ["""Os endereços IPv6 são representados por número hexadecimais""",
+                        """Os endereços IPv4 são representados por número hexadecimais""",
+                        """Os endereços IPv6 têm 32 bits de comprimento""",
+                        """Os endereços IPv4 têm 32 bits de comprimento""",
+                        """Os endereços IPv4 têm 128 bits de comprimento""",
+                        """Os endereços IPv6 têm 64 bits de comprimento"""]},
+         """Z1Na figura, que conclusões se podem retirar em relação ao switch?(escolha duas)""":
+             {'cor': ["""r4""", """r5"""],
+              'quest': ["""O administrador da rede configurou as VLAN's 1002 a 1005""", """As VLAN's estão no estado 
+              activo e negociando os parâmetros de configuração""", """Um trunk FDDI foi configurado nesse switch""",
+                        """O comando switchport access vlan 30 foi inserido no modo de configuração de interface para 
+                        a interface FastEthernet 0/1""", """Dispositivos ligados às portas fa0/5 a fa0/8 não podem 
+                        comunicar com dispositivos ligados às portas fa0/9 a fa0/12 sem o recurso a um dispositivo de 
+                        Camada 3"""]},
+         """Z3Na figura, o PC 1 envia uma trama ao PC 4. Em que ligações, ao longo do caminho entre o PC 1 e o PC 4 , 
+         é introduzida na trama, uma etiqueta com o VLAN ID""": {'cor': ["""r5"""], 'quest': ["""A""", """A, B""",
+                                                                                              """A, B, D, G""", """A, 
+                                                                                              D, F""", """C, E""",
+                                                                                              """C, E, F"""]},
+         """Z4Na figura, o administrador adicionou o PC4 num novo escritório da empresa. Foi adicionado o switch S3 
+         ligado ao switch S2 através de um trunk. Por motivos de segurança, o PC4 foi colocado na VLAN 10. O novo 
+         escritório utiliza a rede 172.17.11.0/24. Depois da instalação, os PCs existentes não podem aceder a 
+         partilhas no PC4, porquê?""": {'cor': ["""r3"""], 'quest': ["""A ligação entre os switches deve ser 
+         configurada como uma porta de acesso para permitir o acesso à VLAN 10 no S3""", """O novo PC está numa 
+         sub-rede diferente. Portanto, a Fa0/2 em S3 deve ser configurada como uma porta de trunk""", """O PC4 deve 
+         utilizar a mesma sub-rede dos outros PCs da VLAN HR""", """Uma única VLAN não pode abranger vários 
+         switches"""]},
+         """Z6O que acontece com as portas pertencentes a uma VLAN quando esta é excluída?""": {'cor': ["""r1"""],
+                                                                                                'quest': [""" As portas não podem comunicar com outras portas.
+         """, """ As portas retornam à VLAN de gestão.
+         """, """ As portas passam a fazer parte da VLAN2 automaticamente.
+         """, """ As portas continuam fazendo parte dessa VLAN até que o switch seja reinicializado. Em seguida, elas ficam pertencentes à VLAN de gestão.
+         """]},
+         """Z7Num switch, quais são as características da VLAN1 numa configuração por omissão?""": {'cor': ["""r3"""],
+                                                                                                    'quest': [""" O nome da VLAN1 deve ser alterado
+         """, """ Tem o VLAN ID igual a 10.
+         """, """ Todas as portas do switch são membros da VLAN1.
+         """, """ Somente a porta 0/1 do switch é atribuída à VLAN1.
+         """, """ Os links entre os switches não são membros da VLAN1.
+         """]},
+         """Z8A porta fa0/1 de um switch foi configurada manualmente como um trunk, mas agora será utilizada para ligar um host à rede. Como o administrador de rede deve reconfigurar a porta fa0/1 do switch?""": {
+             'cor': ["""r4"""], 'quest': [""" Inserir o comando switchport mode trunk no modo de configuração da interface.
+         """, """ Excluir todas as VLANs que estiverem a passar pelo trunk da porta fa0/1.
+         """, """ Desactivar e activar a interface administrativamente para que ela retorne ao seu estado por omissão.
+         """, """ Inserir o comando switchport mode access no modo de configuração da interface
+         """]},
+        """Z9Que características tornam os switches preferíveis aos hubs em redes Ethernet? (escolha duas)""": {'cor': ["""r2""", """r5"""], 'quest': [""" Redução do crosstalk
+        """, """ Minimização das colisões
+        """, """ Suporte para cablagem UTP
+        """, """ Divisão em domínios de broadcast
+        """, """ Aumento no débito de transmissão
+        """]}
+         }
 
 
 def get_dict():
-  return dicto
+    return dicto
+
+
 '''
 while True:
     inp = input("question : ")

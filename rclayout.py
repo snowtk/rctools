@@ -63,8 +63,50 @@ rc_question_bar = """
     </form><br>
     """
 
+rc_submeter_form = """
+    <form action="/rcSubmit/" method="post">
+            <div class="text-danger"></div>
+            <div class="form-group">
+                <label for="id" class="control-label">ID(vazio se desconhecido)</label>
+                <input type="text" id="id" name="id" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Pergunta" class="control-label">Pergunta</label>
+                <input type="text" id="Pergunta" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="urlimg" class="control-label">Url da Imagem</label>
+                <input type="text" id="urlimg" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="pres" class="control-label">Possiveis respostas (Por ordem)</label>
+                <input type="text" id="pres" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="rcor" class="control-label">Respostas corretas</label>
+                <input type="text" id="rcor" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submeter" class="btn btn-primary" />
+            </div>
+        </form>
+
+"""
+
+
+def get_submeter_form():
+    return rc_submeter_form
+
+
 def get_question_bar():
     return rc_question_bar
+
+
 def getlayout():
     return rclayout
 

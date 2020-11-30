@@ -6,14 +6,23 @@ from flask_cors import CORS,cross_origin
 import cabula
 import rclayout
 import git
+import pickle
 import sys
+import sqlite3
 app = Flask(__name__)
 CORS(app)
 
 dicto = cabula.get_dict()
 
 killswitch = False
-#teste2
+
+conn = sqlite3.connect('submits.db')
+conn.execute('''CREATE TABLE IF NOT EXISTS QuestionInfo
+         (ID INT PRIMARY KEY     NOT NULL,
+         QID           TEXT    NOT NULL,
+         AGE            TEXT     NOT NULL,
+         ADDRESS        TEXT,
+         SALARY         TEXT);''')
 
 @app.route('/update_server', methods=['POST'])
 def webhook():
@@ -122,6 +131,14 @@ def pedrokey():
         abort(404)
         return "This should not be returned"
     return rclayout.getlayout() + rclayout.get_question_bar() +rclayout.getfooter()
+
+@app.route('/rc/submeter')
+def rcsubmit():
+    global killswitch
+    if killswitch == True:
+        abort(404)
+        return "This should not be returned"
+    return rclayout.getlayout() + rclayout.get_submeter_form() +rclayout.getfooter()
 
 @app.route("/rcInputKey/", methods=['POST'])
 def move_forward():
