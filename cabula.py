@@ -1306,7 +1306,7 @@ correctas em relagdo ao enderegamento efectuado pelo Host_A? (escolha duas)""": 
 gateway por omissdo 172.16.224.1. O posto A precisa de enviar um pacote a um novo
 posto, cujo enderego IP é 172.16.231.78. Vai pois realizar um AND entre 0 endereco de
 destino e a sua mascara da rede, para perceber se o IP é local ou remoto. Que afirmagées
-estdo correctas? (escolha duas)""": {'cor': ["""r2""", """r3"""], 'quest': ["""
+estdo correctas? (escolha duas)""": {'cor': ["""r1""", """r3"""], 'quest': ["""
 """, """
 """, """
 
@@ -1396,7 +1396,7 @@ Os terminais que criaram a colisdo transmitem logo os dados
 
 Os terminais que criaram a colisdo transmitem novamente as 16 Ultimas tramas
 Os terminais diminuem o periodo de espera para permitir uma transmissdo rapida"""]}, """H3Depois de uma colisdéo numa rede Ethernet entre dois equipamentos, quando o algoritmo
-de backoff é evocado, qual deles retransmite primeiro?""": {'cor': ["""r1"""], 'quest': ["""  O dispositivo envolvido na colisdo com o menor enderego MAC
+de backoff é evocado, qual deles retransmite primeiro?""": {'cor': ["""r3"""], 'quest': ["""  O dispositivo envolvido na colisdo com o menor enderego MAC
 
 """, """  O dispositivo envolvido na coliséo com o menor enderego IP
 
@@ -1636,7 +1636,32 @@ cifrado, estamos a realizar""": {'cor': ["""r2"""], 'quest': [""" SSH
         """, """ Suporte para cablagem UTP
         """, """ Divisão em domínios de broadcast
         """, """ Aumento no débito de transmissão
-        """]}
+        """]},
+        """Z10Qual é a frase correcta sobre o protocolo IEEE 802.1q?""": {'cor': ["""r4"""], 'quest': ["""O protocolo IEEE 
+        802.1q é proprietário da Cisco""", """ As tramas IEEE 802.1q são mapeadas para VLAN's através de endereços MAC""",
+                                                                                               """ O protocolo IEEE 
+                                                                                               802.1q não exige que o 
+                                                                                               FCS (código de 
+                                                                                               redundância) da trama 
+                                                                                               original seja 
+                                                                                               recalculado""",
+                                                                                               """ O protocolo IEEE 
+                                                                                               802.1q não executa 
+                                                                                               operações em tramas 
+                                                                                               encaminhadas para 
+                                                                                               portas de acesso"""]},
+        """Z11Um administrador de rede está a remover várias VLAN's num switch. Quando o administrador insere o 
+        comando no vlan 1, o switch gera um erro. Porque foi gerado esse erro?""": {'cor': ["""r1"""], 'quest': [""" 
+        A VLAN 1 nunca pode ser excluída""", """ A VLAN 1 só pode ser excluída se o arquivo vlan.dat for excluído""",
+                                                                                                                 """A 
+                                                                                                                 VLAN 
+                                                                                                                 1 
+                                                                                                                 não 
+                                                                                                                 pode 
+                                                                                                                 ser 
+                                                                                                                 excluída até que todas as suas portas tenham sido movidas para outra VLAN""", """ A VLAN 1 não pode ser excluída até que suas responsabilidades tenham sido atribuídas a outra VLAN"""]},
+"""Z5Qual é a afirmação correcta sobre uma rede de diversos switches com VLAN's?""": {'cor': ["""r2"""], 'quest': [""" Configurar ligações inter-switch como trunks faz com que todos os hosts em qualquer VLAN recebam broadcasts das outras VLANs""", """ Um trunk é afectado por situações descontroladas de broadcast em qualquer VLAN transportada""", """ Portas em VLAN's diferentes comunicam através da ligação trunk""", """ Transportar todas as VLAN's obrigatórias em uma única porta de acesso irá garantir a separação adequada do tráfego"""]},
+"""Z12Qual das seguintes afirmações está correcta em relação ao nível de Acesso à Rede do modelo TCP/IP?""": {'cor': ["""r4"""], 'quest': [""" Realiza a determinação do melhor caminho""", """ é responsável pela representação e codicação da informação""", """ Utiliza endereços IP para endereçar as tramas""", """ Efectua a detecção de erros na comunicação""", """Efectua a divisão dos segmentos em pacotes"""]}
          }
 
 

@@ -19,10 +19,11 @@ killswitch = False
 conn = sqlite3.connect('submits.db')
 conn.execute('''CREATE TABLE IF NOT EXISTS QuestionInfo
          (ID INT PRIMARY KEY     NOT NULL,
-         QID           TEXT    NOT NULL,
-         AGE            TEXT     NOT NULL,
-         ADDRESS        TEXT,
-         SALARY         TEXT);''')
+         QID           TEXT,
+         Pergunta            TEXT,
+         Img        TEXT NOT NULL,
+         Cor         TEXT,
+         Respostas TEXT);''')
 
 @app.route('/update_server', methods=['POST'])
 def webhook():
